@@ -1,12 +1,24 @@
 #include <iostream>
 #include "./include/CSVReader.h"
+#include "./include/ParameterCalculation.h"
 #include<iomanip>
+#include<algorithm>
 
 int main() {
     auto data = CSVReader::readCSV("../data/tesla.csv");
+    std::reverse(data.begin(), data.end());
 
-    for (size_t i = 0; i < std::min(data.size(), size_t(250)); ++i) {
-        std::cout << data[i].date << ", " << data[i].closed << ", " << data[i].volume <<", " << data[i].open <<", " << data[i].high <<", " << data[i].low<< std::endl;
-    }
+    ParameterCalculation pc(data);
+
+    double mean = pc.calculateMean();
+    double volatility  = pc.calculateVolatility();
+    double zScore = pc.calculateZScore();
+
+    std::cout << "Mean : " << mean << std::endl;
+    std::cout << "volatility : " << volatility << std::endl;
+    std::cout << "z - Score : " << zScore << std::endl;
+
+
+
     return 0;
 }
