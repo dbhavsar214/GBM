@@ -1,10 +1,10 @@
-# 📈 GBM-Based Stock Price Simulator (C++)
+#  GBM-Based Stock Price Simulator (C++)
 
 This project simulates future stock prices using the **Geometric Brownian Motion (GBM)** model. It calculates statistical parameters from historical data and applies stochastic modeling to estimate future values.
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Read and parse historical stock data from CSV
 - Compute:
@@ -18,7 +18,7 @@ This project simulates future stock prices using the **Geometric Brownian Motion
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 GBM-Simulator/
@@ -48,7 +48,7 @@ GBM-Simulator/
 ### Configuration
 - C++20
 
-## 🧠 Model Used
+##  Model Used
 
 ### Geometric Brownian Motion
 
@@ -61,7 +61,7 @@ Where:
 - $t$: time (in days)
 - $Z$: random value from standard normal distribution
 
-## 🧑‍💻 Author
+##  Author
 
 **Divy Bhavsar**  
 [@divybhavsar](https://github.com/dbhavsar214)
