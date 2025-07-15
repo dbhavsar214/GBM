@@ -63,6 +63,20 @@ build CMakeFiles/GBMTest.dir/src/CSVReader.cpp.obj: CXX_COMPILER__GBMTest_unscan
   OBJECT_DIR = CMakeFiles\GBMTest.dir
   OBJECT_FILE_DIR = CMakeFiles\GBMTest.dir\src
 
+build CMakeFiles/GBMTest.dir/src/ParameterCalculation.cpp.obj: CXX_COMPILER__GBMTest_unscanned_Debug D$:/DBQ1618/GBMTest/src/ParameterCalculation.cpp || cmake_object_order_depends_target_GBMTest
+  DEP_FILE = CMakeFiles\GBMTest.dir\src\ParameterCalculation.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/DBQ1618/GBMTest/include
+  OBJECT_DIR = CMakeFiles\GBMTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\GBMTest.dir\src
+
+build CMakeFiles/GBMTest.dir/src/GBMRunner.cpp.obj: CXX_COMPILER__GBMTest_unscanned_Debug D$:/DBQ1618/GBMTest/src/GBMRunner.cpp || cmake_object_order_depends_target_GBMTest
+  DEP_FILE = CMakeFiles\GBMTest.dir\src\GBMRunner.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -ID:/DBQ1618/GBMTest/include
+  OBJECT_DIR = CMakeFiles\GBMTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\GBMTest.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target GBMTest
@@ -71,7 +85,7 @@ build CMakeFiles/GBMTest.dir/src/CSVReader.cpp.obj: CXX_COMPILER__GBMTest_unscan
 #############################################
 # Link the executable GBMTest.exe
 
-build GBMTest.exe: CXX_EXECUTABLE_LINKER__GBMTest_Debug CMakeFiles/GBMTest.dir/main.cpp.obj CMakeFiles/GBMTest.dir/src/CSVReader.cpp.obj
+build GBMTest.exe: CXX_EXECUTABLE_LINKER__GBMTest_Debug CMakeFiles/GBMTest.dir/main.cpp.obj CMakeFiles/GBMTest.dir/src/CSVReader.cpp.obj CMakeFiles/GBMTest.dir/src/ParameterCalculation.cpp.obj CMakeFiles/GBMTest.dir/src/GBMRunner.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\GBMTest.dir

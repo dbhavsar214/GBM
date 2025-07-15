@@ -2,6 +2,7 @@
 // Created by Divy2 on 17-06-2025.
 //
 #include "ParameterCalculation.h"
+#include "StockData.h"
 #include<vector>
 #include<cmath>
 #include<numeric>
@@ -18,10 +19,6 @@ void ParameterCalculation::computeLogReturns() {
         double ret = std::log(stockData[i].closed / stockData[i - 1].closed);
         logReturns.push_back(ret);
     }
-}
-
-std::vector<double> ParameterCalculation::calculatelogValues() const {
-    return logReturns;
 }
 
 double ParameterCalculation::calculateMean() const {
@@ -52,12 +49,5 @@ double ParameterCalculation::calculateZScore() const {
     return (latest - mean) / stdDev;
 }
 
-double ParameterCalculation::annualizedReturn() const {
-    return calculateMean() * 252.0;
-}
-
-double ParameterCalculation::annualizedVolatility() const {
-    return calculateVolatility() * std::sqrt(252.0);
-}
 
 
