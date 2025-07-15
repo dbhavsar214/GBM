@@ -45,22 +45,6 @@ std::vector<StockData> CSVReader::readCSV(const std::string& filename) {
         std::getline(ss, item, ',');
         record.closed = std::stod(cleanPriceString(item));
 
-        //extract volume
-        std::getline(ss, item, ',');
-        record.volume = std::stoll(item);
-
-
-        //extract opening price
-        std::getline(ss, item, ',');
-        record.open = std::stod(cleanPriceString(item));
-
-        //extract high of the day
-        std::getline(ss, item, ',');
-        record.high = std::stod(cleanPriceString(item));
-
-        //extract low of the day
-        std::getline(ss, item, ',');
-        record.low = std::stod(cleanPriceString(item));
 
         data.push_back(record);
     }

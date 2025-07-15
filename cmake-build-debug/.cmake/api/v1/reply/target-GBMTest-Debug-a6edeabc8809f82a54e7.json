@@ -67,7 +67,9 @@
 			"sourceIndexes" : 
 			[
 				0,
-				3
+				3,
+				5,
+				7
 			]
 		}
 	],
@@ -105,7 +107,9 @@
 			"sourceIndexes" : 
 			[
 				0,
-				3
+				3,
+				5,
+				7
 			]
 		},
 		{
@@ -113,7 +117,9 @@
 			"sourceIndexes" : 
 			[
 				1,
-				2
+				2,
+				4,
+				6
 			]
 		}
 	],
@@ -139,6 +145,28 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/CSVReader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/ParameterCalculation.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/ParameterCalculation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/GBM.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/GBMRunner.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

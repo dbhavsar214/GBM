@@ -7,4 +7,8 @@ include_directories(include)
 add_executable(GBMTest main.cpp
         include/CSVReader.h
         include/StockData.h
-        src/CSVReader.cpp)
+        src/CSVReader.cpp
+        include/ParameterCalculation.h
+        src/ParameterCalculation.cpp
+        include/GBM.h
+        src/GBMRunner.cpp)

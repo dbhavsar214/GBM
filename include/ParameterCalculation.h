@@ -1,7 +1,7 @@
 //
 // Created by Divy2 on 17-06-2025.
 //
-#include<../include/StockData.h>
+#include "StockData.h"
 #include<vector>
 
 #ifndef PARAMETERCALCULATION_H
@@ -18,10 +18,6 @@ public:
     double calculateVolatility() const;
 
     double calculateZScore() const;
-
-    double annualizedReturn() const;
-
-    double annualizedVolatility() const;
 
 private:
     std::vector<StockData> stockData;
